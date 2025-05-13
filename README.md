@@ -21,6 +21,7 @@
     /templates
         index.html           ← Main web page
     app.py                    ← Flask server code
+    apping.py
     requirements.txt          ← List of required libraries
 
 # HOW to USE (Windows)
