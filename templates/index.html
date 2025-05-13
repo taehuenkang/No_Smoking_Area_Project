@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>흡연 감지 통합 시스템</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/police_logo.png') }}" alt="경찰 로고" class="logo">
+        <h1>경찰청 흡연 감지 시스템</h1>
+        <p>실시간 CCTV 기반 흡연자 모니터링 플랫폼</p>
+    </header>
+
+    <main>
+        <section class="video-section">
+            <h2>📹 실시간 영상 스트리밍</h2>
+            <img src="{{ url_for('video_feed') }}" alt="Live Stream" class="video-feed">
+        </section>
+
+        <section class="stats-section">
+            <h2>🚨 누적 흡연 감지 횟수</h2>
+            <div class="counter">{{ count }}</div>
+        </section>
+
+        <section class="recent-images">
+            <h2>🧾 최근 흡연 감지 이미지</h2>
+            <div class="image-gallery">
+                {% for image in images %}
+                    <div class="thumb">
+                        <img src="{{ url_for('static', filename='detected/' ~ image) }}" alt="Detected Image">
+                        <p>{{ image }}</p>
+                    </div>
+                {% else %}
+                    <p>감지된 이미지가 아직 없습니다.</p>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>ⓒ 2025 경찰청 스마트 감시 시스템 | 모든 권리 보유</p>
+    </footer>
+</body>
+</html>
