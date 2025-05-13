@@ -9,8 +9,7 @@
 
 
 
-📋 Project Structure
-bash
+##📋 Project Structure##
 
 /your-flask-project
     /static
@@ -23,7 +22,7 @@ bash
     app.py                    ← Flask server code
     requirements.txt          ← List of required libraries
 
-
+##How to use##
 1. Clone the Project
 First, you need to clone the project from GitHub.
 
