@@ -9,6 +9,20 @@
 
 
 
+📋 Project Structure
+bash
+
+/your-flask-project
+    /static
+        /images
+            police_logo.png   ← Police logo image
+        /css
+            style.css         ← Web page styles
+    /templates
+        index.html           ← Main web page
+    app.py                    ← Flask server code
+    requirements.txt          ← List of required libraries
+
 
 1. Clone the Project
 First, you need to clone the project from GitHub.
@@ -22,7 +36,6 @@ Mac/Linux:
 
 Open the terminal and install Git using the following command:
 
-bash
 
 sudo apt install git  # Ubuntu/Linux
 brew install git      # Mac
@@ -37,9 +50,7 @@ To run the project, you need to install the libraries listed in requirements.txt
 2.1 Set Up Virtual Environment (Optional)
 It’s recommended to use a virtual environment to avoid dependency conflicts with other projects.
 
-bash
-복사
-편집
+
 # Create a virtual environment (Windows)
 python -m venv venv
 
@@ -96,7 +107,8 @@ The statistics will update each time a smoker is detected.
 7. Shut Down the Project
 To stop the project, terminate the Flask server.
 
-bash
+
+
 
 # Stop the server by pressing Ctrl + C
 8. Additional Setup (Optional)
@@ -104,16 +116,4 @@ Adjust Camera Index: If the webcam does not work, try changing the camera index 
 
 Train the Model: If you want higher accuracy, you can fine-tune the YOLOv5 model or perform additional training for better performance.
 
-📋 Project Structure
-bash
 
-/your-flask-project
-    /static
-        /images
-            police_logo.png   ← Police logo image
-        /css
-            style.css         ← Web page styles
-    /templates
-        index.html           ← Main web page
-    app.py                    ← Flask server code
-    requirements.txt          ← List of required libraries
