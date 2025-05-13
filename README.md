@@ -2,6 +2,7 @@
 
 
 ## AI_SW개발자 과정 05/13 finalprojectDay ##
+
 ## Team Member : 강태훈, 임정환, 박성호 ##
 강태훈 : 기획서, 간단한 보고, 구현코드
 임정환 : 시연, 간단한 보고, 구현코드
@@ -9,7 +10,7 @@
 
 
 
-##📋 Project Structure##
+# 📋Project Structure (Windows)
 
 /your-flask-project
     /static
@@ -22,7 +23,7 @@
     app.py                    ← Flask server code
     requirements.txt          ← List of required libraries
 
-##How to use##
+# HOW to USE (Windows)
 1. Clone the Project
 First, you need to clone the project from GitHub.
 
